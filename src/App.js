@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import ExampleComponent from './ExampleComponent'
 import TestComponent from './TestComponent'
+import DisplayTime from './DisplayTime'
 
 // Add your code own within the return statement
 
@@ -10,6 +11,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        {/* {<DisplayTime />} */}
         <header className="App-header">
           {moment().format('MMMM Do YYYY, hh:mm:ss a')}
         </header>
@@ -19,7 +21,7 @@ class App extends Component {
           allows us to add in components, which are separate, self-contained chunks of JSX.
         </p>
         <ExampleComponent />
-
+        <TestComponent />
       </div>
     );
   }
